@@ -1,5 +1,39 @@
 #include "ntddk.h"
 
+#pragma pack(1)
+typedef struct ServiceDescriptorEntry {
+	unsigned int *ServiceTableBase;
+	unsigned int *ServiceCounterTableBase; //仅适用于checked build版本
+	unsigned int NumberOfServices;
+	unsigned char *ParamTableBase;
+} ServiceDescriptorTableEntry_t, *PServiceDescriptorTableEntry_t;
+#pragma pack()
+#pragma pack(1)
+typedef struct ServiceDescriptorEntry {
+	unsigned int *ServiceTableBase;
+	unsigned int *ServiceCounterTableBase; //仅适用于checked build版本
+	unsigned int NumberOfServices;
+	unsigned char *ParamTableBase;
+} ServiceDescriptorTableEntry_t, *PServiceDescriptorTableEntry_t;
+#pragma pack()
+
+------------------------------------------
+#pragma pack(1)
+typedef struct ServiceDescriptorEntry {
+	unsigned int *ServiceTableBase;
+	unsigned int *ServiceCounterTableBase; //仅适用于checked build版本
+	unsigned int NumberOfServices;
+	unsigned char *ParamTableBase;
+} ServiceDescriptorTableEntry_t, *PServiceDescriptorTableEntry_t;
+#pragma pack()
+#pragma pack(1)
+typedef struct ServiceDescriptorEntry {
+	unsigned int *ServiceTableBase;
+	unsigned int *ServiceCounterTableBase; //仅适用于checked build版本
+	unsigned int NumberOfServices;
+	unsigned char *ParamTableBase;
+} ServiceDescriptorTableEntry_t, *PServiceDescriptorTableEntry_t;
+#pragma pack()
 
 
 #pragma pack(1)
